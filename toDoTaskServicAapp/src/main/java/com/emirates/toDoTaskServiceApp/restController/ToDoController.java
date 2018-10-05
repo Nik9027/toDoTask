@@ -2,7 +2,6 @@ package com.emirates.toDoTaskServiceApp.restController;
 
 import java.util.List;
 
-import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -49,7 +48,7 @@ public class ToDoController {
 	}
 	
 	@RequestMapping(value="update", method=RequestMethod.GET)
-	public ResponseEntity<Task> updateTask(@RequestParam("TaskID") int TaskID,@RequestParam ("status") String Status) throws Exception{
+	public ResponseEntity<Task> updateTask(@RequestParam("TaskID") int TaskID, @RequestParam ("status") String Status) throws Exception{
 	
 		return new ResponseEntity<Task>(service.updateStatus(TaskID, Status), HttpStatus.OK);
 	}
