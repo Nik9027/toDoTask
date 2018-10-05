@@ -1,0 +1,33 @@
+This is a ToDoTask application developed as POC.
+
+Frontend designed using Angular 6
+
+Backend service developed using springboot.
+
+H2 in-memory database has been used for this application.
+
+Springboot service provides features:
+addTask
+delete Task
+Update task status
+Get all task
+
+use below command to run this application:
+"java -jar  toDoTaskServicAapp-0.0.1-SNAPSHOT.jar"
+
+UI: http://localhost:8080/toDoTask
+
+
+Services Example:
+
+To add:
+http://localhost:8080/task/add?taskDescription=firstTask&status=Pending
+
+Delete task:
+http://localhost:8080/task/delete?TaskID=1
+
+Status Update
+http://localhost:8080/task/update?TaskID=1&status=Complete
+
+ShowAll task:
+http://localhost:8080/task/all
